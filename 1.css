@@ -1,0 +1,377 @@
+html {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+.main-container {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  position: relative;
+}
+
+.nav-container {
+  width: 100%;
+  background-color: rgb(44, 48, 44);
+  display: grid;
+  grid-template-columns: 1fr 1fr 3fr;
+  height: 60px;
+}
+
+.area-1 {
+  background-color: rgb(44, 48, 44);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('./logot.JPG');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.area-2 {
+  background-color: rgb(44, 48, 44);
+}
+
+.area-3 {
+  background-color: rgb(44, 48, 44);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  color: white;
+  font-size: 30px;
+}
+
+@media only screen and (max-width:1080px) {
+  .area-3 {
+display: none;
+  }
+}
+
+.area-3h {
+  display: none;
+}
+
+@media only screen and (max-width:1080px) {
+  .area-3h {
+    /* position: absolute;
+    width: 200px;
+    font-size: 30px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    display: grid;
+    left: 500px;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(44, 48, 44); */
+    display: block;
+  }
+}
+
+.hamburger {
+  display: inline-block;
+  cursor: pointer;
+  margin-top: 10px;
+  margin-left: 70%;
+  border: solid white;
+  padding-left: 5px;
+  padding-right: 5px;
+  z-index: 1000;
+}
+
+.bar-1, .bar-2, .bar-3 {
+  width: 35px;
+  height: 5px;
+  background-color: white;
+  color: white;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.toggler {
+  width: 51px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  right: 8px;
+  bottom: 25px;
+}
+
+/* .dropdown {
+  display: none;
+  position: absolute;
+} */
+
+.ring {
+  position: absolute;
+}
+
+.dropdown {
+  position: relative;
+  width: 200px;
+  font-size: 30px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  display: none;
+  top: 6px;
+  right: 150px;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(44, 48, 44);
+  color: white;
+}
+
+.show {
+  display: grid;
+}
+
+/* .dropdown-box{
+  position: relative;
+  width: 200px;
+  font-size: 30px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  display: none;
+  top: 5px;
+  right: 150px;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(44, 48, 44);
+  color: white;
+} */
+
+.space {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.nav-text {
+  text-decoration: none;
+  color: white;
+}
+
+.body-container {
+  width: 100%;
+  height: 750px;
+  display: grid;
+  /* grid-template-columns: 1fr 1fr 1fr; */
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  justify-content: center;
+  align-items: center;
+  /* background-color: #fff8e2; */
+  background-color: #ffecd3;
+}
+
+@media only screen and (max-width:1080px) {
+  .body-container {
+    height: auto;
+    grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}
+
+@media only screen and (max-width:720px) {
+  .body-container {
+    height: auto;
+    grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+}
+
+@media only screen and (max-width:599px) {
+  .body-container {
+    height: auto;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+}
+
+/* .pic-1{
+  width: 100%;
+  height: 100%;
+  background-image: url('./energy.JPG');
+  background-size: 70%;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  justify-self: center;
+  justify-content: center;
+  align-items: center;
+} */
+
+.pic-1{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-self: center;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+@media only screen and (max-width:1080px) {
+  .pic-1 {
+    height: auto;
+  }
+}
+
+.pic-container-1 {
+  width: 70%;
+  height: 30vw;
+  background-image: url('./energy.JPG');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: teal;
+  cursor: pointer;
+}
+
+@media only screen and (max-width:1080px) {
+  .pic-container-1 {
+    height: 89vw;
+  }
+}
+
+.pic-2{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-self: center;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+@media only screen and (max-width:1080px) {
+  .pic-2 {
+    height: auto;
+  }
+}
+
+.pic-container-2 {
+  width: 70%;
+  height: 30vw;
+  background-image: url('./motivation.JPG');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: teal;
+  cursor: pointer;
+}
+
+@media only screen and (max-width:1080px) {
+  .pic-container-2 {
+    height: 89vw;
+  }
+}
+
+.pic-3{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-self: center;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+@media only screen and (max-width:1080px) {
+  .pic-3 {
+    height: auto;
+  }
+}
+
+.pic-container-3 {
+  width: 70%;
+  height: 30vw;
+  background-image: url('./healing.JPG');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: teal;
+  cursor: pointer;
+}
+
+@media only screen and (max-width:1080px) {
+  .pic-container-3 {
+    height: 89vw;
+  }
+}
+
+.foot-container {
+  background-color: black;
+  width: 100%;
+  height: 160px;
+  color: white;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+}
+
+.copywright {
+  display: flex;
+  justify-content: center;
+  font-size: 20px;
+}
+
+.icons {
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 30px;
+  margin-bottom: 20px;
+  width: 500px;
+}
+
+.faf {
+  
+  color: white;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  justify-self: center;
+}
+
+.fai {
+  
+  color: white;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  justify-self: center;
+}
+
+.fay {
+  background: white;
+  color: white;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  justify-self: center;
+  border-radius: 50%;
+}
+
+.fap {
+  color: white;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  justify-self: center;
+}
