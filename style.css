@@ -337,14 +337,22 @@ display: none;
   justify-content: space-evenly;
   font-size: 30px;
   margin-bottom: 20px;
-  width: 500px;
+  width: 5em;
+}
+
+@media only screen and (max-width:1080px){
+  .icons {
+    width: 200px;
+  }
 }
 
 .faf {
   
   color: white;
-  width: 80px;
-  height: 80px;
+  /* width: 80px;
+  height: 80px; */
+  width: 5vw;
+  height: 5vw;
   display: flex;
   justify-self: center;
 }
@@ -352,8 +360,8 @@ display: none;
 .fai {
   
   color: white;
-  width: 80px;
-  height: 80px;
+  width: 5vw;
+  height: 5vw;
   display: flex;
   justify-self: center;
 }
@@ -361,8 +369,8 @@ display: none;
 .fay {
   background: white;
   color: white;
-  width: 80px;
-  height: 80px;
+  width: 5vw;
+  height: 5vw;
   display: flex;
   justify-self: center;
   border-radius: 50%;
@@ -370,8 +378,8 @@ display: none;
 
 .fap {
   color: white;
-  width: 80px;
-  height: 80px;
+  width: 5vw;
+  height: 5vw;
   display: flex;
   justify-self: center;
 }
